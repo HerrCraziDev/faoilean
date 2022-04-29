@@ -1,0 +1,11 @@
+{
+    "config": {
+        "sitename": "Faoilean"
+    },
+    "services": {
+        "article": {
+            "useCache": true,
+            "cacheTimeout": 6000
+        } 
+    }
+}

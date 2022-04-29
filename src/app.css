@@ -1,0 +1,115 @@
+/* @import '@fontsource/fira-mono'; */
+
+:root {
+	--font-serif: "EB Garamond", Alegreya, serif;
+	--font-sans-serif: Cantarell, Ubuntu, 'Open Sans', sans-serif;
+	--font-mono: 'Hack', monospace;
+	--font-sitename: "Voltage", sans-serif;
+	--pure-white: #ffffff;
+	--primary-color: #d1d1d1;
+	--secondary-color: #e4e4e4;
+	--tertiary-color: #eee;
+	--accent-color: #ff3e00;
+	--heading-color: white;
+	--text-color: #444444;
+	--background-without-opacity: rgba(255, 255, 255, 0.7);
+	--column-width: 42rem;
+	--column-margin-top: 4rem;
+	--base-font-size: 16px;
+	--page-width: 40rem;
+}
+
+html {
+	font-family: var(--font-serif);
+	font-size: var(--base-font-size);
+}
+
+body {
+	min-height: 100vh;
+	margin: 0;
+	background-color: var(--primary-color);
+	background: linear-gradient(
+		180deg,
+		var(--primary-color) 0%,
+		var(--secondary-color) 10.45%,
+		var(--tertiary-color) 41.35%
+	);
+}
+
+body::before {
+	content: '';
+	width: 80vw;
+	height: 100vh;
+	position: absolute;
+	top: 0;
+	left: 10vw;
+	z-index: -1;
+	background: radial-gradient(
+		50% 50% at 50% 50%,
+		var(--pure-white) 0%,
+		rgba(255, 255, 255, 0) 100%
+	);
+	opacity: 0.05;
+}
+
+ul.nolist, li.nolist {
+	padding: 0;
+	margin: 0;
+	list-style: none;
+}
+
+h1,
+h2,
+p {
+	font-weight: 400;
+	color: var(--text-color);
+}
+
+p {
+	line-height: 1.5;
+}
+
+a {
+	color: var(--accent-color);
+	text-decoration: none;
+}
+
+a:hover {
+	text-decoration: underline;
+}
+
+h1 {
+	font-size: 2rem;
+	text-align: center;
+}
+
+h2 {
+	font-size: 1rem;
+}
+
+pre {
+	font-size: 16px;
+	font-family: var(--font-mono);
+	background-color: rgba(255, 255, 255, 0.45);
+	border-radius: 3px;
+	box-shadow: 2px 2px 6px rgb(255 255 255 / 25%);
+	padding: 0.5em;
+	overflow-x: auto;
+	color: var(--text-color);
+}
+
+input,
+button {
+	font-size: inherit;
+	font-family: inherit;
+}
+
+button:focus:not(:focus-visible) {
+	outline: none;
+}
+
+@media (min-width: 720px) {
+	h1 {
+		font-size: 2.4rem;
+	}
+}

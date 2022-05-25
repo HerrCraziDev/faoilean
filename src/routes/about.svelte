@@ -1,5 +1,6 @@
 <script context="module">
 	import { browser, dev } from '$app/env';
+    import { config } from '$lib/config/settings.json'
 
 	// we don't need any JS on this page, though we'll load
 	// it in dev so that we get hot module replacement...
@@ -15,7 +16,7 @@
 </script>
 
 <svelte:head>
-	<title>About</title>
+	<title>About - {config.sitename}</title>
 </svelte:head>
 
 <div class="content">

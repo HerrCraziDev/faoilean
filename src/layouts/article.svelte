@@ -1,5 +1,6 @@
 <script>
     import Tag from '$lib/components/Tag.svelte';
+    import { config } from '$lib/config/settings.json'
 
     export let title;
     export let author;
@@ -10,7 +11,7 @@
 
 
 <svelte:head>
-    <title>{title} - Faoilean</title>
+    <title>{title} - {config.sitename}</title>
 </svelte:head>
 
 <div id="article-head">

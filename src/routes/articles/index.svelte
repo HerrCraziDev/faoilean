@@ -1,9 +1,7 @@
 
-<script context="module">
-    console.log("Here");    
-</script>
-
 <script>
+    import { config } from '$lib/config/settings.json'
+
     export const layout = '';
     export let articles;
 
@@ -15,10 +13,15 @@
     }
 </script>
 
+<svelte:head>
+    <title>Articles - {config.sitename}</title>
+</svelte:head>
 
-Tada
+<h1>All Articles</h1>
+There are {articles.length} articles on this blog.
+
 <ul>
-    <button on:click={printArticles}>Debug Articles</button>
+    <!-- <button on:click={printArticles}>Debug Articles</button> -->
 
     {#each articles as { title, author, path }}
         <li>

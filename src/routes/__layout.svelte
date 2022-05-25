@@ -6,11 +6,11 @@
 <Header />
 
 <main>
-	<slot />
+	<slot/>
 </main>
 
 <footer>
-	<p><em>faoilean</em>, light as a feather, free as a bird! - suckless blogging thingy</p>
+	<p><em><a href="https://github.com/HerrCraziDev/faoilean">faoilean</a></em>, light as a feather, free as a bird! - suckless blogging thingy</p>
 </footer>
 
 <style>
@@ -36,6 +36,10 @@
 
 	footer em {
 		font-weight: bold;
+	}
+
+	footer em a {
+		color: inherit;
 	}
 
 	@media (min-width: 480px) {

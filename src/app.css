@@ -9,7 +9,7 @@
 	--primary-color: #d1d1d1;
 	--secondary-color: #e4e4e4;
 	--tertiary-color: #eee;
-	--accent-color: #ff3e00;
+	--accent-color: #223db1;
 	--heading-color: white;
 	--text-color: #444444;
 	--background-without-opacity: rgba(255, 255, 255, 0.7);
@@ -31,25 +31,9 @@ body {
 	background: linear-gradient(
 		180deg,
 		var(--primary-color) 0%,
-		var(--secondary-color) 10.45%,
-		var(--tertiary-color) 41.35%
+		var(--secondary-color) 4em,
+		var(--tertiary-color) 10em
 	);
-}
-
-body::before {
-	content: '';
-	width: 80vw;
-	height: 100vh;
-	position: absolute;
-	top: 0;
-	left: 10vw;
-	z-index: -1;
-	background: radial-gradient(
-		50% 50% at 50% 50%,
-		var(--pure-white) 0%,
-		rgba(255, 255, 255, 0) 100%
-	);
-	opacity: 0.05;
 }
 
 ul.nolist, li.nolist {

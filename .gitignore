@@ -10,3 +10,4 @@ node_modules
 .output
 src/routes/articles/*.md
 package-lock.json
+/.vscode

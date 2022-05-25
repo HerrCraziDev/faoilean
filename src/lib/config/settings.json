@@ -1,6 +1,8 @@
 {
     "config": {
-        "sitename": "Faoilean"
+        "sitename": "Faoilean",
+        "sitedesc": "suckless blogging",
+        "siteicon": "/faoilean_icon_transparent.png"
     },
     "services": {
         "article": {

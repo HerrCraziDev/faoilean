@@ -59,7 +59,7 @@
 	#site-title a {
 		display: flex;
 		flex-direction: column;
-		justify-content: center;
+		align-items: flex-start;
 		line-height: 1;
 	}
 
@@ -75,7 +75,7 @@
 
 	#site-title .site-icon {
 		height: 2em;
-		margin-right: 0.3em;
+		margin-right: 0.2em;
 	}
 
 	#links {
